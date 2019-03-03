@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Jogo da imitação</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #n1 {
+                width: 200px; height: 200px;  border: 1px solid #000; background-color: #EEE; float: left;
+                margin-right: 10px; font-size: 100px; text-align: center; line-height: 200px;
+            }
+            #n2 {
+                width: 200px; height: 200px;  border: 1px solid #000; float: left;
+                margin-right: 10px; font-size: 100px; text-align: center; line-height: 200px;
+            }
+            button{
+                width: 414px; height: 40px; margin-top: 10px; font-size: 20px;
+            }
+        </style>
+        <script src="imitacao.js"></script>
+    </head>
+    <body onload="randomizar()">
+        <div id="n1">0</div>
+        <input id="n2">
+        <div style="clear: both"></div>
+        <button onclick="tentarImitar()">Eu não sou um robô!</button>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Jogo do Calculo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #n1, #n3, #n5 {
+                width: 200px; height: 200px;  border: 1px solid #000; background-color: #EEE; float: left;
+                margin-right: 10px; font-size: 100px; text-align: center; line-height: 200px;
+            }
+            #n2, #n4 {
+                width: 200px; height: 200px;   float: left;
+                margin-right: 10px; font-size: 100px; text-align: center; line-height: 200px;
+            }
+            button{
+                width: 414px; height: 40px; margin-top: 10px; font-size: 20px;
+            }
+        </style>
+        <script src="calculos.js"></script>
+    </head>
+    <body onload="randomizarOperadores()">
+        <div id="n1">0</div>
+        <div id="n2"></div>
+        <div id="n3">0</div>
+        <div id="n4">=</div>
+        <input id="n5" autofocus="">
+        <div style="clear: both"></div>
+        <button onclick="calcularNum()">Verificar</button>
+    </body>
+</html>
