@@ -10,8 +10,13 @@ function randomizarOperadores(){
     var ranVar1 = Math.floor((Math.random()*100)+1);
     var ranVar2 = Math.floor((Math.random()*100)+1);
     
-    document.getElementById("n1").innerHTML = ranVar1;
-    document.getElementById("n3").innerHTML = ranVar2;
+    if (ranVar2>ranVar1) {
+        document.getElementById("n1").innerHTML = ranVar2;
+        document.getElementById("n3").innerHTML = ranVar1;
+    }else {
+        document.getElementById("n1").innerHTML = ranVar1;
+        document.getElementById("n3").innerHTML = ranVar2;
+    }
     
 }
 
